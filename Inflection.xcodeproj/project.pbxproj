@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */; };
+		BDD822471AA4477E00E48CEF /* Inflection.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BDD822441AA4477E00E48CEF /* Inflection.podspec */; };
+		BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD822451AA4477E00E48CEF /* LICENSE.md */; };
+		BDD822491AA4477E00E48CEF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BDD822461AA4477E00E48CEF /* README.md */; };
+		BDD8224B1AA447E400E48CEF /* Inflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8224A1AA447E400E48CEF /* Inflection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDD822391AA4476700E48CEF /* Inflection Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Inflection Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD8223D1AA4476700E48CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inflection_Tests.swift; sourceTree = "<group>"; };
+		BDD822441AA4477E00E48CEF /* Inflection.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Inflection.podspec; sourceTree = "<group>"; };
+		BDD822451AA4477E00E48CEF /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BDD822461AA4477E00E48CEF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDD8224A1AA447E400E48CEF /* Inflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inflection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD822361AA4476700E48CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDD8222E1AA4473F00E48CEF = {
+			isa = PBXGroup;
+			children = (
+				BDD822441AA4477E00E48CEF /* Inflection.podspec */,
+				BDD822451AA4477E00E48CEF /* LICENSE.md */,
+				BDD822461AA4477E00E48CEF /* README.md */,
+				BDD822431AA4477600E48CEF /* Source */,
+				BDD8223B1AA4476700E48CEF /* Inflection Tests */,
+				BDD8223A1AA4476700E48CEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD8223A1AA4476700E48CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD822391AA4476700E48CEF /* Inflection Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD8223B1AA4476700E48CEF /* Inflection Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8223E1AA4476700E48CEF /* Inflection_Tests.swift */,
+				BDD8223C1AA4476700E48CEF /* Supporting Files */,
+			);
+			path = "Inflection Tests";
+			sourceTree = "<group>";
+		};
+		BDD8223C1AA4476700E48CEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8223D1AA4476700E48CEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDD822431AA4477600E48CEF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BDD8224A1AA447E400E48CEF /* Inflection.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD822381AA4476700E48CEF /* Inflection Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD822421AA4476700E48CEF /* Build configuration list for PBXNativeTarget "Inflection Tests" */;
+			buildPhases = (
+				BDD822351AA4476700E48CEF /* Sources */,
+				BDD822361AA4476700E48CEF /* Frameworks */,
+				BDD822371AA4476700E48CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Inflection Tests";
+			productName = "Inflection Tests";
+			productReference = BDD822391AA4476700E48CEF /* Inflection Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD8222F1AA4473F00E48CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					BDD822381AA4476700E48CEF = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = BDD822321AA4473F00E48CEF /* Build configuration list for PBXProject "Inflection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDD8222E1AA4473F00E48CEF;
+			productRefGroup = BDD8223A1AA4476700E48CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD822381AA4476700E48CEF /* Inflection Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD822371AA4476700E48CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD822471AA4477E00E48CEF /* Inflection.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD822351AA4476700E48CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD822491AA4477E00E48CEF /* README.md in Sources */,
+				BDD822481AA4477E00E48CEF /* LICENSE.md in Sources */,
+				BDD8224B1AA447E400E48CEF /* Inflection.swift in Sources */,
+				BDD8223F1AA4476700E48CEF /* Inflection_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BDD822331AA4473F00E48CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BDD822341AA4473F00E48CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BDD822401AA4476700E48CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Inflection Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDD822411AA4476700E48CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Inflection Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD822321AA4473F00E48CEF /* Build configuration list for PBXProject "Inflection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD822331AA4473F00E48CEF /* Debug */,
+				BDD822341AA4473F00E48CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD822421AA4476700E48CEF /* Build configuration list for PBXNativeTarget "Inflection Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD822401AA4476700E48CEF /* Debug */,
+				BDD822411AA4476700E48CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD8222F1AA4473F00E48CEF /* Project object */;
+}
