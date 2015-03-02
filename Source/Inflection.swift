@@ -46,6 +46,10 @@ public extension NSString {
         return self.underscoreCase()
     }
     
+    func swiftCase() -> NSString {
+        return self.objcCase()
+    }
+    
     func underscoreCase() -> NSString {
         return self.lowerCaseFirstLetter().replaceIdentifierWithString("_")
     }
