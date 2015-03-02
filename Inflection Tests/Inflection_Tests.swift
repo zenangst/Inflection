@@ -11,8 +11,8 @@ import XCTest
 
 class Inflection_Tests: XCTestCase {
     
-    func testRubyToObjectiveC() {
-        var subjectString = "createdAt".snakeCase()
+    func testRubyToSwift() {
+        var subjectString = "createdAt".rubyCase()
         var expectedString = "created_at"
         
         println("\nsubjectString: \(subjectString)\n")
@@ -20,8 +20,8 @@ class Inflection_Tests: XCTestCase {
         XCTAssertEqual(subjectString, expectedString, "New string should be 'created_at'")
     }
     
-    func testObjectiveCToRuby() {
-        var subjectString = "updated_at".objcCase()
+    func testSwiftToRuby() {
+        var subjectString = "updated_at".swiftCase()
         var expectedString = "updatedAt"
         
         println("\nsubjectString: \(subjectString)\n")
