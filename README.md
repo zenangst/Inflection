@@ -1,4 +1,4 @@
-##Inflection
+![Inflection](https://github.com/zenangst/Inflection/blob/master/Images/logo.png)
 
 The Optimus Prime of string inflection
 
