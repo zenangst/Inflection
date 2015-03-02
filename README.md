@@ -1,5 +1,12 @@
 ##Inflection
 
+```swift
+
+let swiftString = "created_at".swiftCase()
+let rubyString = "createdAt".rubyCase()
+
+```
+
 ## Contribute
 
 1. Fork it
