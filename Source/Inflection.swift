@@ -11,14 +11,14 @@ import Foundation
 public extension NSDictionary {
     
     func swiftCase() -> NSDictionary {
-        return self.newCase({ (key) -> NSString in key.swiftCase()})
+        return self.inflectDictionaryKeys({ (string) -> NSString in string.swiftCase()})
     }
     
     func rubyCase() -> NSDictionary {
-        return self.newCase({ (key) -> NSString in key.rubyCase()})
+        return self.inflectDictionaryKeys({ (string) -> NSString in string.rubyCase()})
     }
     
-    private func newCase(closure: (string: NSString) -> NSString) -> NSDictionary {
+    private func inflectDictionaryKeys(closure: (string: NSString) -> NSString) -> NSDictionary {
         let mutableDictionary = NSMutableDictionary.new()
         
         self.enumerateKeysAndObjectsUsingBlock { (keyString, value, stop) -> () in
