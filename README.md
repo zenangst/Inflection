@@ -1,5 +1,7 @@
 ##Inflection
 
+The Optimus Prime of string inflection
+
 ```swift
 
 let swiftString = "created_at".swiftCase()
