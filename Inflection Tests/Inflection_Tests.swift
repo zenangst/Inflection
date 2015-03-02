@@ -25,4 +25,11 @@ class Inflection_Tests: XCTestCase {
         XCTAssertEqual(subjectString, expectedString, "New string should be 'createdAt'")
     }
     
+    func testDictionaryInflection() {
+        let remoteDictionary: NSDictionary = ["created_at":"", "updated_at":""]
+        let localDictionary: NSDictionary = ["createdAt":"", "updatedAt":""]
+        
+        XCTAssertEqual(remoteDictionary.swiftCase(), localDictionary)
+    }
+    
 }
