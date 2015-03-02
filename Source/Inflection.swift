@@ -8,6 +8,28 @@
 
 import Foundation
 
+public extension NSDictionary {
+    
+    func swiftCase() -> NSDictionary {
+        return self.newCase({ (key) -> NSString in key.swiftCase()})
+    }
+    
+    func rubyCase() -> NSDictionary {
+        return self.newCase({ (key) -> NSString in key.rubyCase()})
+    }
+    
+    private func newCase(closure: (string: NSString) -> NSString) -> NSDictionary {
+        let mutableDictionary = NSMutableDictionary.new()
+        
+        self.enumerateKeysAndObjectsUsingBlock { (keyString, value, stop) -> () in
+            mutableDictionary[closure(string: keyString as! NSString)] = value
+        }
+        
+        return mutableDictionary as NSDictionary
+    }
+    
+}
+
 public extension NSString {
     
     func camelCase() -> NSString {
