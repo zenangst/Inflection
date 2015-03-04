@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "Inflection"
-  s.version = "0.2"
+  s.version = "0.2.1"
   s.summary = "The Optimus Prime of string inflection"
   s.description = <<-DESC
                    * The Optimus Prime of string inflection
