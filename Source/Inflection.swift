@@ -11,104 +11,101 @@ import Foundation
 public extension NSDictionary {
     
     func swiftCase() -> NSDictionary {
-        return self.inflectDictionaryKeys({ (string) -> NSString in string.swiftCase()})
+        return self.inflectDictionaryKeys({ (string) -> String in string.swiftCase()})
     }
     
     func rubyCase() -> NSDictionary {
-        return self.inflectDictionaryKeys({ (string) -> NSString in string.rubyCase()})
+        return self.inflectDictionaryKeys({ (string) -> String in string.rubyCase()})
     }
     
-    private func inflectDictionaryKeys(closure: (string: NSString) -> NSString) -> NSDictionary {
-        let mutableDictionary = NSMutableDictionary.new()
-        
-        self.enumerateKeysAndObjectsUsingBlock { (keyString, value, stop) -> () in
-            mutableDictionary[closure(string: keyString as! NSString)] = value
-        }
-        
-        return mutableDictionary as NSDictionary
+    private func inflectDictionaryKeys(closure: (string: String) -> String) -> NSDictionary {
+        var newDictionary = NSMutableDictionary.new()
+        map(self) { newDictionary[closure(string: $0 as! String)] = $1 }
+
+        return newDictionary.copy() as! NSDictionary
     }
     
 }
 
-public extension NSString {
+public extension String {
     
-    func camelCase() -> NSString {
+    func camelCase() -> String {
         return self.replaceIdentifierWithString("").lowerCaseFirstLetter()
     }
     
-    func classify() -> NSString {
+    func classify() -> String {
         return self.upperCamelCase()
     }
     
-    func dashedCase() -> NSString {
+    func dashedCase() -> String {
         return self.lowerCaseFirstLetter().replaceIdentifierWithString("-")
     }
     
-    func dotNetCase() -> NSString {
+    func dotNetCase() -> String {
         return self.upperCamelCase()
     }
     
-    func javascriptCase() -> NSString {
+    func javascriptCase() -> String {
         return self.replaceIdentifierWithString("").lowerCaseFirstLetter()
     }
     
-    func lispCase() -> NSString {
+    func lispCase() -> String {
         return self.dashedCase()
     }
     
-    func objcCase() -> NSString {
+    func objcCase() -> String {
         return self.camelCase()
     }
     
-    func pythonCase() -> NSString {
+    func pythonCase() -> String {
         return self.snakeCase()
     }
     
-    func snakeCase() -> NSString {
+    func snakeCase() -> String {
         return self.underscoreCase()
     }
     
-    func swiftCase() -> NSString {
-        return self.objcCase()
+    func swiftCase() -> String {
+        return self.camelCase()
     }
     
-    func underscoreCase() -> NSString {
-        return self.lowerCaseFirstLetter().replaceIdentifierWithString("_")
+    func underscoreCase() -> String {
+        return (self.lowerCaseFirstLetter() as String).replaceIdentifierWithString("_")
     }
     
-    func upperCamelCase() -> NSString {
+    func upperCamelCase() -> String {
         return self.camelCase().upperCamelCase()
     }
     
-    func rubyCase () -> NSString {
+    func rubyCase () -> String {
         return self.snakeCase()
     }
     
-    func humanize() -> NSString {
+    func humanize() -> String {
         return self.replaceIdentifierWithString(" ").capitalizedString
     }
     
-    private func lowerCaseFirstLetter() -> NSString {
+    private func lowerCaseFirstLetter() -> String {
         var mutableString = self.mutableCopy() as! NSMutableString
         mutableString.replaceCharactersInRange(NSMakeRange(0, 1), withString: self.firstLetter().lowercaseString as String)
-        
-        return mutableString.copy() as! NSString
+
+        return mutableString.copy() as! String
     }
     
-    private func upperCaseFirstLetter() -> NSString {
+    private func upperCaseFirstLetter() -> String {
         var mutableString = self.mutableCopy() as! NSMutableString
         mutableString.replaceCharactersInRange(NSMakeRange(0, 1), withString: self.firstLetter().uppercaseString as String)
         
-        return mutableString.copy() as! NSString
+        return mutableString.copy() as! String
     }
     
-    private func firstLetter() -> NSString {
-        return self.substringToIndex(1)
+    private func firstLetter() -> String {
+        return (self as NSString).substringToIndex(1) as String
     }
     
-    private func replaceIdentifierWithString(identifier: String) -> NSString {
-        
-        let scanner = NSScanner.init(string: self as! String)
+    private func replaceIdentifierWithString(identifier: String) -> String {
+
+        let scanner = NSScanner.init(string: self)
         let identifierSet = NSCharacterSet.init(charactersInString: identifier)
         let alphaNumericSet = NSCharacterSet.alphanumericCharacterSet()
         let uppercaseSet = NSCharacterSet.uppercaseLetterCharacterSet()
@@ -140,8 +137,8 @@ public extension NSString {
             }
             
         }
-        
-        return output
+
+        return output.copy() as! String
     }
     
 }

@@ -26,10 +26,10 @@ class Inflection_Tests: XCTestCase {
     }
     
     func testDictionaryInflection() {
-        let remoteDictionary: NSDictionary = ["created_at":"", "updated_at":""]
-        let localDictionary: NSDictionary = ["createdAt":"", "updatedAt":""]
-        
-        XCTAssertEqual(remoteDictionary.swiftCase(), localDictionary)
+        let remoteDictionary = ["created_at":"", "updated_at":""]
+        let localDictionary = ["createdAt":"", "updatedAt":""]
+
+        XCTAssertEqual((remoteDictionary as NSDictionary).swiftCase(), localDictionary as NSDictionary)
     }
     
 }
