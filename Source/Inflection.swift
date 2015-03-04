@@ -10,19 +10,19 @@ import Foundation
 
 public extension NSDictionary {
     
-    func swiftCase() -> Dictionary<String, Any?> {
+    func swiftCase() -> NSDictionary {
         return self.inflectDictionaryKeys({ (string) -> String in string.swiftCase()})
     }
     
-    func rubyCase() -> Dictionary<String, Any?> {
+    func rubyCase() -> NSDictionary {
         return self.inflectDictionaryKeys({ (string) -> String in string.rubyCase()})
     }
     
-    private func inflectDictionaryKeys(closure: (string: String) -> String) -> Dictionary<String, Any?> {
-        var newDictionary = Dictionary<String, Any?>()
+    private func inflectDictionaryKeys(closure: (string: String) -> String) -> NSDictionary {
+        var newDictionary = NSMutableDictionary.new()
         map(self) { newDictionary[closure(string: $0 as! String)] = $1 }
 
-        return newDictionary
+        return newDictionary.copy() as! NSDictionary
     }
     
 }
